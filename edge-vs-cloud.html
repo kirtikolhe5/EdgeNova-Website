@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edge AI vs Cloud AI | EdgeNova</title>
+    <meta name="description" content="Compare Edge AI and Cloud AI, including latency, privacy, connectivity, cost, and real-world use cases.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-cpu-fill"></i> EdgeNova
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+                <li class="nav-item"><a class="nav-link active" href="edge-vs-cloud.html">Edge vs Cloud</a></li>
+                <li class="nav-item"><a class="nav-link" href="applications.html">Applications</a></li>
+                <li class="nav-item"><a class="nav-link" href="future.html">Future</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="py-5 text-center" style="background-color: #f0fdfa;">
+    <div class="container py-4">
+        <span class="badge rounded-pill text-bg-light border mb-3">TECHNOLOGY COMPARISON</span>
+        <h1 class="display-5 fw-bold">Edge AI vs Cloud AI</h1>
+        <p class="lead mx-auto mt-3" style="max-width: 760px;">
+            Both technologies make artificial intelligence possible.
+            The key difference is where data is processed and how quickly
+            a system can respond.
+        </p>
+    </div>
+</header>
+
+<!-- Introduction -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="p-4 rounded-4 h-100 border">
+                    <div class="display-5 mb-3" style="color: #0f766e;">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+                    <h2 class="h3 fw-bold">What is Edge AI?</h2>
+                    <p>
+                        Edge AI runs AI models on local devices or nearby
+                        edge computers. It can analyze data without sending
+                        every request to a remote cloud server.
+                    </p>
+                    <ul class="mb-0">
+                        <li>Fast local responses</li>
+                        <li>Can work with limited connectivity</li>
+                        <li>Less data needs to leave the device</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="p-4 rounded-4 h-100 border">
+                    <div class="display-5 mb-3" style="color: #0f766e;">
+                        <i class="bi bi-cloud-check"></i>
+                    </div>
+                    <h2 class="h3 fw-bold">What is Cloud AI?</h2>
+                    <p>
+                        Cloud AI runs AI workloads on remote servers or
+                        cloud platforms accessed through a network.
+                        It can provide scalable computing resources.
+                    </p>
+                    <ul class="mb-0">
+                        <li>Access to powerful remote computing</li>
+                        <li>Centralized model management</li>
+                        <li>Useful for large-scale data analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Comparison Table -->
+<section class="py-5" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">Key Differences</h2>
+            <p class="text-secondary">A side-by-side comparison of both approaches.</p>
+        </div>
+
+        <div class="table-responsive bg-white rounded-4 shadow-sm p-2">
+            <table class="table table-bordered table-hover align-middle mb-0">
+                <thead>
+                    <tr style="background-color: #0f766e; color: white;">
+                        <th scope="col" style="min-width: 130px;">Feature</th>
+                        <th scope="col" style="min-width: 180px;">Edge AI</th>
+                        <th scope="col" style="min-width: 180px;">Cloud AI</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Processing</th>
+                        <td>On the device or nearby</td>
+                        <td>On remote cloud servers</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Response Time</th>
+                        <td>Often lower latency</td>
+                        <td>Depends on network and server response</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Connectivity</th>
+                        <td>Some tasks can work offline</td>
+                        <td>Usually requires network access</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Privacy</th>
+                        <td>Data can remain local</td>
+                        <td>Data may need to be sent to the cloud</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Computing Power</th>
+                        <td>Limited by local hardware</td>
+                        <td>Can use scalable cloud resources</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Maintenance</th>
+                        <td>Devices and local models need management</td>
+                        <td>Centralized infrastructure can simplify updates</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Best Suited For</th>
+                        <td>Real-time and local decisions</td>
+                        <td>Large-scale processing and centralized analysis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="small text-secondary mt-3">
+            Note: Actual performance depends on hardware, model size,
+            network quality, and system design.
+        </p>
+    </div>
+</section>
+
+<!-- Advantages -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Advantages and Limitations</h2>
+            <p class="text-secondary">Each approach has strengths and trade-offs.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="rounded-4 p-4 h-100" style="background-color: #f0fdfa;">
+                    <h3 class="h4 fw-bold">
+                        <i class="bi bi-cpu-fill me-2" style="color: #0f766e;"></i>
+                        Edge AI
+                    </h3>
+
+                    <h6 class="fw-bold mt-4">Advantages</h6>
+                    <ul>
+                        <li>Quick response for local tasks</li>
+                        <li>Reduced dependence on internet connectivity</li>
+                        <li>Can reduce the amount of data transmitted</li>
+                    </ul>
+
+                    <h6 class="fw-bold mt-4">Limitations</h6>
+                    <ul class="mb-0">
+                        <li>Limited device memory and processing power</li>
+                        <li>Updating many devices can be challenging</li>
+                        <li>Large AI models may not fit on small devices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="rounded-4 p-4 h-100" style="background-color: #f8fafc;">
+                    <h3 class="h4 fw-bold">
+                        <i class="bi bi-cloud-fill me-2" style="color: #0f766e;"></i>
+                        Cloud AI
+                    </h3>
+
+                    <h6 class="fw-bold mt-4">Advantages</h6>
+                    <ul>
+                        <li>Access to powerful computing resources</li>
+                        <li>Convenient centralized model updates</li>
+                        <li>Suitable for processing large datasets</li>
+                    </ul>
+
+                    <h6 class="fw-bold mt-4">Limitations</h6>
+                    <ul class="mb-0">
+                        <li>Network delays can affect response time</li>
+                        <li>Connectivity may be necessary</li>
+                        <li>Sending sensitive data requires careful protection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Real World Examples -->
+<section class="py-5" style="background-color: #f8fafc;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Real-World Examples</h2>
+            <p class="text-secondary">Where do these technologies fit best?</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="display-5" style="color: #0f766e;">
+                        <i class="bi bi-camera-video"></i>
+                    </div>
+                    <h4 class="fw-bold mt-3">Smart Cameras</h4>
+                    <p class="text-secondary mb-0">
+                        Edge AI can detect people or objects locally and
+                        trigger an alert with minimal delay.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="display-5" style="color: #0f766e;">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h4 class="fw-bold mt-3">Business Analytics</h4>
+                    <p class="text-secondary mb-0">
+                        Cloud AI can analyze data from many locations to
+                        identify large-scale patterns and trends.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4 p-3">
+                    <div class="display-5" style="color: #0f766e;">
+                        <i class="bi bi-car-front"></i>
+                    </div>
+                    <h4 class="fw-bold mt-3">Smart Vehicles</h4>
+                    <p class="text-secondary mb-0">
+                        Local AI can help process sensor information quickly,
+                        while cloud services support maps and fleet analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Conclusion -->
+<section class="py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold">Why Not Use Both?</h2>
+        <p class="mx-auto mt-3" style="max-width: 760px;">
+            Many modern systems combine Edge AI and Cloud AI. Devices handle
+            time-sensitive local tasks, while the cloud supports model training,
+            centralized management, and deeper analysis.
+        </p>
+
+        <a href="applications.html" class="btn btn-success px-4 py-2 mt-3"
+           style="background-color: #0f766e; border-color: #0f766e;">
+            Explore Applications <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center text-secondary border-top">
+    <div class="container">
+        <p class="fw-bold mb-1" style="color: #0f766e;">
+            <i class="bi bi-cpu-fill"></i> EdgeNova
+        </p>
+        <p class="small mb-0">Exploring the future of intelligent computing.</p>
+        <p class="small mt-2 mb-0">
+            &copy; <span id="currentYear"></span> EdgeNova. Educational Blog Project.
+        </p>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" type="button"
+        class="btn btn-success rounded-circle shadow"
+        aria-label="Back to top"
+        style="display: none; position: fixed; bottom: 25px; right: 25px; z-index: 1000; width: 45px; height: 45px; background-color: #0f766e; border-color: #0f766e;">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
